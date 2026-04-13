@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.crud</groupId>
-    <artifactId>crud-empleados</artifactId>
+    <groupId>com.carreras</groupId>
+    <artifactId>simulador_ejercicio</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -15,31 +15,12 @@
     </properties>
 
     <dependencies>
-        <!-- SQLite JDBC Driver for connecting to the local embedded database -->
+        <!-- SQLite JDBC Driver -->
         <dependency>
             <groupId>org.xerial</groupId>
             <artifactId>sqlite-jdbc</artifactId>
-            <version>3.45.1.0</version>
-        </dependency>
-        <!-- FlatLaf for modern UI appearance in Swing -->
-        <dependency>
-            <groupId>com.formdev</groupId>
-            <artifactId>flatlaf</artifactId>
-            <version>3.4</version>
+            <version>3.36.0.3</version>
         </dependency>
     </dependencies>
 
-    <build>
-        <plugins>
-            <!-- Define the main class to run from Maven -->
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>exec-maven-plugin</artifactId>
-                <version>3.1.1</version>
-                <configuration>
-                    <mainClass>com.crud.Main</mainClass>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
 </project>
